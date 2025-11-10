@@ -21,7 +21,7 @@ public class Shooting : MonoBehaviour
         //Control del cañon
         pivot.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * speedRotation, Space.World);
         pivot.Rotate(Input.GetAxis("Vertical") * Time.deltaTime * speedRotation * Vector3.back);
-        Debug.DrawRay(pivot.position, pivot.up * 50, Color.yellow);
+        Debug.DrawRay(pivot.position, pivot.up * 10, Color.yellow);
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
